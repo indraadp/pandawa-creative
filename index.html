@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PANDAWA-CREATIVE | Jasa Artikel SEO</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="
+        navbar navbar-expand-lg navbar navbar-dark bg-primary
+        shadow
+        sticky-top
+        p-4
+      "
+    >
+      <div class="d-flex justify-content-around">
+        <a class="navbar-brand" onclick="showHome()">PANDAWA-CREATIVE</a>
+          <div class="d-flex">
+            <a class="nav-link active menu-text" aria-current="page" onclick="showHome()">Beranda</a >
+              <a class="nav-link active menu-text" aria-current="page" href="#">Tentang Kami</a >
+                <a class="nav-link active menu-text" aria-current="page" href="#ourteam">Team Kami</a >
+            <a class="nav-link active menu-text" aria-current="page" href="#">Portofolio</a >
+            <a class="nav-link active menu-text" aria-current="page" onclick="showContact()">Kontak Kami</a >
+          </div>
+      </div>
+    </nav>
+
+	     <!-- content -->
+    <div class="container" id="program-list">
+      <div class="row mt-5 d-flex justify-content-around bg-light p-2">
+        <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Penulis Professional</h5>
+            <p class="card-text">
+              Kami memiliki tim penulis professional dalam mengerjakan artikel yang berkualitas.
+            </p>
+          </div>
+        </div>
+        <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img2.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">SEO Friendly</h5>
+            <p class="card-text">
+              Sebagai indikator artikel yang berkualitas, Kami menggunakan standar YOAST SEO.
+            </p>
+          </div>
+        </div>
+        <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img6.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Jaminan Artikel Original</h5>
+            <p class="card-text">
+              Jaminan artikel berkualitas dan original karena disertai hasil cek plagiasi.
+            </p>
+          </div>
+        </div>
+        <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img3.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Garansi Revisi</h5>
+            <p class="card-text">
+              Kami selalu memberikan jaminan revisi untuk setiap projek yang tidak sesuai brief awal.
+            </p>
+          </div>
+        </div>
+        <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img4.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pelayanan yang Ramah</h5>
+            <p class="card-text">
+              Customer Service ramah, Fast Respon dan sopan santun.
+            </p>
+          </div>
+        </div>
+          <div class="card col-4 m-3 shadow border-0" style="width: 18rem">
+          <img
+            src="img/img5.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Jaminan Harga Murah</h5>
+            <p class="card-text">
+              Kami menyediakan layanan kualitas tinggi dengan harga sangat miring, mari buktikan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container" id="contact-form">
+      <form class="mt-5" onsubmit="contactUs(event)">
+        <h1 style="margin-bottom: 10px;">Contact Us</h1>
+        <div class="row mb-3">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              placeholder="Nama Depan"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Nama Belakang"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+            />
+        </div>
+        <div class="mb-3">
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Masukkan Pesan" rows="5"></textarea>
+</div>
+        <button type="submit" class="btn btn-submit">Kirim Pesan</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer d-flex flex-column align-items-center">
+      <div class="row d-flex justify-content-around mt-5">
+        <div class="col d-flex flex-column" style="width:250px">
+          <h5 class="title-footer">Tentang Kami</h5>
+          <span> <a href="#">Tentang</a></span>
+          <span> <a href="#">Testimonial</a></span>
+          <span> <a href="#">Kebijakan Privasi</a></span>
+          <span> <a href="#">Ketentuan Layanan</a></span>
+        </div>
+        <div class="col d-flex flex-column" style="width:250px">
+          <h5 class="title-footer">Layanan Kami</h5>
+          <span> <a href="#">Jasa Artikel SEO</a></span>
+          <span> <a href="#">Jasa Artikel Bahasa Inggris</a></span>
+          <span> <a href="#">Jasa Backlink Berkualitas</a></span>
+          <span> <a href="#">Jasa Menaikkan skor DA PA</a></span>
+        </div>
+        <div class="col d-flex flex-column" style="width:250px">
+          <h5 class="title-footer" id="ourteam">Our Team</h5>
+          <span> <a href="https://www.instagram.com/indradp77" target="_blank">Indra DP</a></span>
+          <span> <a href="https://instagram.com/hendradigital" target="_blank">Hendra Suhendra</a></span>
+          <span> <a href="https://www.instagram.com/ciungtips" target="_blank">Rusdiana</a></span>
+          <span> <a href="https://www.instagram.com/pandu_law" target="_blank">Pandu Nur Husna</a></span>
+          <span> <a href="https://www.instagram.com/kakdidik13" target="_blank">Didik Jatmiko</a></span>
+        </div>
+      </div>
+      <div class="mt-5 mb-5">
+        <span>©2021 PANDAWA-CREATIVE</span>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
